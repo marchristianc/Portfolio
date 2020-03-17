@@ -46,10 +46,11 @@
 
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="major">Intro</h2>
+								<h2 class="major">GREP from ed</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
+								<p>Link to this github project can be located <a="https://github.com/marchristianc/">here</a>.</p>
+								<p>This project is the compression of the GREP program into less than 400 lines of code. It first involved having to read
+								and understand the code in order to be able to strip and condense the code.</p>
 							</article>
 
 						<!-- Work -->
@@ -344,7 +345,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; Mar Christian Contreras. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
