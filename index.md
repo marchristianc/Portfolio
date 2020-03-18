@@ -32,8 +32,8 @@
 						</div>
 						<nav>
 							<ul>
-								<li><a href="#intro">Project 1</a></li>
-								<li><a href="#work">Project 2</a></li>
+								<li><a href="#project1">Project 1</a></li>
+								<li><a href="#midterm">Midterm</a></li>
 								<li><a href="#about">Project 3</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
@@ -45,7 +45,7 @@
 					<div id="main">
 
 						<!-- Intro -->
-							<article id="intro">
+							<article id="project1">
 								<h2 class="major">GREP from ed</h2>
 								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
 								<p>Link to this github project can be located <a href="https://github.com/marchristianc/">here</a>.</p>
@@ -55,11 +55,139 @@
 							</article>
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
+							<article id="midterm">
+								<h2 class="major">Midterm Submission (Coding Portion)</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
-								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
+								<xmp>
+									// Midterm exam – The C Programming Language, Spring 2020      
+// (Coding section – 52 points) 
+// POST ALL of this CODE to your ______.github.io portfolio. 
+// (8 pts)  (1)  Find any and all mistakes in the following code, and correct them.  
+void count() {   
+    printf("Enter lines of text here: ...\n");   
+    int c, nl = 0, nc = 0, nt = 0, nbackslash = 0;  
+    while ((c = fgetc(stdin)) != EOF) {   
+        if (c == '\n') { ++nl; } else 
+        if (c == '\t') { ++nt; } else 
+        if (c == '\\') { ++nbackslash; } else 
+        if (isalpha(c)) { ++nc; }   
+        printf("lines: %d\n", nl);   
+        printf("tabs: %d\n", nt);   
+        printf("backslashes: %d\n", nbackslash);   
+        printf("alphanumeric: %d\n", nc); 
+    } 
+
+int main(int argc, const char* argv[]) { 
+    count();   
+    return 0; 
+} 
+// The C Standard Library:  Identify the standard library functions that do the following…
+// (3 pts)  (2) Find the first character c in a const char* s: ____________________________ 
+    strchr(s, c);
+// (3 pts)  (3) Find the length of the prefix of const char* s that has characters in const char* t: ____________________ 
+    strspn(s, t);
+// (3 pts)  (4) Terminate a program immediately _________________________________ 
+    exit(0);
+// (3 pts)  (5) Open the file “midterm.txt” in read mode ___________________________
+    FILE* file;
+    file = fopen("midterm.txt", "r");
+    if (file == NULL)
+        printf("Error opening file\n");
+// Using pointers, implement each of the following C standard library functions  size_t strcpy(char* s, const char* t);     
+    char* strcpy(char* s, const char* t) {
+        char* p = s;
+        while ((*s++ = *t++) != '\0');
+        return p;
+    }             
+// (4 pts)  (6) 
+// char* strncat(char* s, const char* t, size_t n);   
+    char* strncat(char* s, const char* t, size_t n) {
+        char* p = s;
+        while (*s != '\0') { ++s; }
+        while (n-- > 0 && *t != '\0') {
+            *s++ = *t++;
+        }
+        *s = '\0';
+        return p;
+    }
+// (4 pts)  (7) 
+// int strcmp(const char* s, const char* t);       
+    int strcmp(const char* s, const char* t) {
+        while (*s != '\0' && *t != '\0' && *s == *t) {
+            ++s;
+            ++t;
+        }
+        return *s - *t;
+    }
+// (4 pts)   (8)
+// PART III: SHORT PROGRAM (20 pts)   (9) Fill in the program code below for the square ADT (abstract data type) 
+//------ POINT ---------------------------------------------------------------- 
+typedef struct point point; 
+struct point { double x, y; }; 
+//------ SQUARE ----------------------------------------------------------------- 
+typedef struct square square; 
+struct square { point ul;  size_t side;  }; 
+square* square_init(double ulx, double uly, double side){
+    square* sq = (square*)malloc(sizeof(square));
+    point* ul = (point*)malloc(sizeof(point));
+    
+    ul->x = ulx;
+    ul->y = uly;
+    
+    sq->ul = ul;
+    sq->side = side;
+    return s;
+}
+// TODO 
+void square_delete(square* sq){
+    free(sq);
+}                  
+// TODO 
+void square_move(square* sq, double x, double y){
+    (sq->ul)->x = x;
+    (sq->ul)->y = y;
+}
+// TODO 
+void square_expandby(square* sq, double expandby){
+    sq->side *= expandby;
+}
+// TODO 
+double square_area(square* sq){
+    return (sq->side)*(sq->side);
+}                  
+// TODO
+double square_perimeter(square* r){
+    return (r->side)*4;
+}              
+// TODO
+// print location, side, area and perimeter 
+void square_print(const char* msg, square* sq){
+    printf("Position (%d, %d)\n", (sq->ul)->x, (sq->ul)->y);
+    printf("Side length (%d)\n", (sq->side));
+    printf("Area (%d)\n", square_area(sq));
+    printf("Perimeter (%d)\n", square_perimeter(sq));
+}  
+// TODO 
+void test_square(double ulx, double uly, double side) {  
+    square* sq = square_init(ulx, uly, side);  
+    square_print(“sq is: “, sq);  
+    square_move(2, 2);  
+    square_print(“sq is now: “, sq);  
+    square_expandby(sq, 10);  
+    square_print(“sq has expanded to: “, sq);  
+    square_delete(sq);  printf(“\n\n”);
+}  
+void tests_square() {  
+    test_square(0, 0, 10); 
+    test_square(1, 1, 5);  
+}    
+// TODO (optional)
+int main(int argc, const char* argv[]) {  
+    tests_square();  
+    return 0; 
+}
+
+								</xmp>
 							</article>
 
 						<!-- About -->
