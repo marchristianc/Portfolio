@@ -55,10 +55,6 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
-pre{
-    opacity: 0;
-} 
-
 mark {
 	background-color: transparent;
 	color: inherit;
