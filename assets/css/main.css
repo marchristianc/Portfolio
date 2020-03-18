@@ -269,7 +269,7 @@ input, select, textarea {
 	}
 
 	pre {
-		background-color: #000000;
+		background-color: #000000 !important;
 		-webkit-overflow-scrolling: touch;
 		font-family: "Courier New", monospace;
 		font-size: 0.9rem;
