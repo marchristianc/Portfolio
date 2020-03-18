@@ -58,7 +58,7 @@
 							<article id="midterm">
 								<h2 class="major">Midterm Submission (Coding Portion)</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<pre><code>
+								<code>
 // Midterm exam – The C Programming Language, Spring 2020      
 // (Coding section – 52 points)
 // (8 pts)  
@@ -187,7 +187,7 @@ int main(int argc, const char* argv[]) {
     return 0; 
 }
 
-								</code></pre>
+								</code>
 							</article>
 
 						<!-- About -->
