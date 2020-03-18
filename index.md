@@ -58,11 +58,11 @@
 							<article id="midterm">
 								<h2 class="major">Midterm Submission (Coding Portion)</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<xmp>
-									// Midterm exam – The C Programming Language, Spring 2020      
-// (Coding section – 52 points) 
-// POST ALL of this CODE to your ______.github.io portfolio. 
-// (8 pts)  (1)  Find any and all mistakes in the following code, and correct them.  
+								<pre><code>
+// Midterm exam – The C Programming Language, Spring 2020      
+// (Coding section – 52 points)
+// (8 pts)  
+// (1)  Find any and all mistakes in the following code, and correct them.  
 void count() {   
     printf("Enter lines of text here: ...\n");   
     int c, nl = 0, nc = 0, nt = 0, nbackslash = 0;  
@@ -187,7 +187,7 @@ int main(int argc, const char* argv[]) {
     return 0; 
 }
 
-								</xmp>
+								</code></pre>
 							</article>
 
 						<!-- About -->
