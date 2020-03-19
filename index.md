@@ -137,7 +137,7 @@ square* square_init(double ulx, double uly, double side){
     
     sq->ul = ul;
     sq->side = side;
-    return s;
+    return sq;
 }
 // TODO 
 void square_delete(square* sq){
