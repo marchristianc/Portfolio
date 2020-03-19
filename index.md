@@ -76,6 +76,7 @@ void count() {
         printf("backslashes: %d\n", nbackslash);   
         printf("alphanumeric: %d\n", nc); 
     } 
+}
 
 int main(int argc, const char* argv[]) { 
     count();   
