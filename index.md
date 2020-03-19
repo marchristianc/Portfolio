@@ -71,11 +71,11 @@ void count() {
         if (c == '\t') { ++nt; } else 
         if (c == '\\') { ++nbackslash; } else 
         if (isalpha(c)) { ++nc; }   
-        printf("lines: %d\n", nl);   
-        printf("tabs: %d\n", nt);   
-        printf("backslashes: %d\n", nbackslash);   
-        printf("alphanumeric: %d\n", nc); 
     } 
+    printf("lines: %d\n", nl);   
+    printf("tabs: %d\n", nt);   
+    printf("backslashes: %d\n", nbackslash);   
+    printf("alphanumeric: %d\n", nc); 
 }
 
 int main(int argc, const char* argv[]) { 
