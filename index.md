@@ -48,7 +48,7 @@
 							<article id="project1">
 								<h2 class="major">GREP from ed</h2>
 								<!--<span class="image main"><img src="images/pic01.jpg" alt="" /></span> -->
-								<p>Link to this github project can be located <a href="https://github.com/marchristianc/">here</a>.</p>
+								<p>Link to this github project can be located <a href="https://github.com/marchristianc/GREP">here</a>.</p>
 								<p>This project is the compression of the GREP program into less than 400 lines of code. It first involved having to read
 								and understand the code in order to be able to strip and condense the code.</p>
 								<p><b>Usage</b>: grep 'text' file.txt</p>
