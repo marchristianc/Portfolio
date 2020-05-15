@@ -34,7 +34,7 @@
 							<ul>
 								<li><a href="#project1">Project 1</a></li>
 								<li><a href="#midterm">Midterm</a></li>
-								<li><a href="#about">Project 3</a></li>
+								<li><a href="#project2">Project 2</a></li>
 								<li><a href="#contact">Contact</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
@@ -193,10 +193,13 @@ int main(int argc, const char* argv[]) {
 							</article>
 
 						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+							<article id="project2">
+								<h2 class="major">DIFF</h2>
+								<!-- <span class="image main"><img src="images/pic03.jpg" alt="" /></span> -->
+								<p>Link to this github project can be located <a href="https://github.com/marchristianc/DIFF">here</a>.</p>
+								<p>This project is the partial recreation of the DIFF program.</p>
+								<img src="images/diff_project.png">
+								<p><b>Usage</b>: diff file1.txt file2.txt</p>
 							</article>
 
 						<!-- Contact -->
